@@ -1,0 +1,16 @@
+plugins{
+    id 'application'
+
+}
+
+repositories {
+
+    mavenCentral()
+
+}
+
+application{
+
+    mainClass = 'exemplogradle.Exemplo'
+    
+}
