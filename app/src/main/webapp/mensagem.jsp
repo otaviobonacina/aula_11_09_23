@@ -9,9 +9,15 @@
     <body>
         <h1>
            <% 
-           String valor =request.getParameter("nome");
-           out.print("Olá " + valor);
+                String valor =request.getParameter("nome");
+                out.print("Olá " + valor);
             %>
+            <hr/>
+            <%
+                for(int i=1;i <=10;i++){
+                    out.print (i + "<br  />);"
+                }
+
         </h1>
     </body>
 </html>
