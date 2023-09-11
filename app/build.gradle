@@ -1,6 +1,7 @@
 plugins{
-    id 'application'
-
+    //id 'application'
+    id'war'
+    id 'org.gretty' version'4.0.3'
 }
 
 repositories {
@@ -9,8 +10,10 @@ repositories {
 
 }
 
-application{
+// application{
+//     mainClass = 'exemplogradle.Exemplo'    
+// }
 
-    mainClass = 'exemplogradle.Exemplo'
-    
+gretty{
+    contextPath = '/'    
 }
